@@ -1,0 +1,105 @@
+ /*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*/
+  
+
+
+.contain{
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: rgb(105, 105, 207);
+    display: flex;
+    margin-top: 40px;
+    padding: 0 15px;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+
+.Login-email,
+.Login-pass{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 12px;
+    background-color: #aabdd2;
+    color: white;
+    border: none;
+    width: 250px;
+    font-style: italic;
+}
+
+.top-text {
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 1200px;
+    justify-content: center;
+    text-align: center;
+}
+
+.welcome {
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    text-align: center;
+    display: inline;
+    margin-top: 20px;
+    font-style: italic;
+    color: rgb(177, 82, 82);
+}
+
+.action{
+    position: absolute;
+    top: 92px;
+    justify-content: center;
+    text-align: center;
+    display: inline;
+}
+
+
+.container-box{
+    background-color: white;
+    padding: 70px 100px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    backdrop-filter: blur(20px);
+    margin-top: 70px;
+}
+
+.log{
+    width: 250px;
+    margin-top: 25px;
+    background-color: #b17bbad2;
+    font-style: italic;
+    border-radius: 15px;
+    height: 45px;   
+}
+
+.acc{
+    color:rgb(93, 87, 87);
+    font-style: italic;
+}
+
+.sign{
+    text-decoration: none;
+    margin-top: 4px;
+    font-style: italic;
+
+}
+
+.top-text{
+    text-align: center;
+}

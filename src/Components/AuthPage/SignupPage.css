@@ -1,0 +1,90 @@
+.signup-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100vh;
+    background-color:  #a57ec3;
+}
+
+.handleSub{
+    flex: 1;
+    padding: 20px;
+    position: relative;
+    bottom: -70px;
+    justify-content: center;
+
+
+}
+
+.signup-img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .signup-section{
+        flex-direction: column;
+    }
+
+    .signup-img {
+        display: none;
+    }
+}
+
+.drpdwn{
+ display: flex;  
+ position: relative;
+ justify-content: center;
+ align-items: center;
+ left: 31px;
+ width: 250px;
+ margin-top: 20px;
+ border-radius: 15px;
+ height: 42px;
+}
+
+.sbit{
+ display: flex;  
+ position: relative;
+ justify-content: center;
+ align-items: center;
+ left: 31px;
+ width: 250px;
+ margin-top: 20px;
+ border-radius: 15px;
+ height: 42px;
+}
+
+.jobseeker{
+    text-align: center;
+    font-style: italic;
+}
+
+.company{
+    text-align: center;
+    font-style: italic;
+}
+
+.optionemail{
+    text-align: center;
+    font-style: italic;
+}
+.Optioname{
+    text-align: center;
+    font-style: italic;
+}
+
+.Optionpass{
+    text-align: center;
+    font-style: italic;
+}

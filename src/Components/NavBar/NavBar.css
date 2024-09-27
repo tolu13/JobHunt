@@ -1,0 +1,14 @@
+.navbar-brand {
+    font-size: 31px;
+    color: brown;
+    
+}
+
+.navbar {
+    background-color: #e6d9f0 !important; /* Light Lilac */
+  }
+  
+  .logo{
+    width: 12px;
+    height: 10px;
+  }

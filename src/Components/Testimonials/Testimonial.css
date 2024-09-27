@@ -1,0 +1,27 @@
+.testimonials .card-img-top.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+ .testimonials {
+    background-color: rgb(99, 124, 170);
+    margin-top: 12px;
+}
+
+.text-center {
+    font-style: italic;
+    color: rgb(175, 59, 59);
+}
+.d-flex {
+    justify-content: center;
+    flex: wrap;
+}
+
+.card-title,
+.card-subtitle{
+    color: aliceblue;
+    margin-bottom: 4px;
+}
