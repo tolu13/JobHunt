@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 export default function SideBar() {
   return (
     <div id='sidebar' className='bg-dark text-white vh-100 p-3'>
-       <img  src='/logo.png' className='logo' />
+       <img  src='/logo.png' className='logo' alt='logo'/>
         <Link to='/dashboard'>
           <FaTachometerAlt  className='me-2'/>Dashboard
         </Link>

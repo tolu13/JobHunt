@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 export const handleSignup = async ( name, email, password, user_type) => {
   try {

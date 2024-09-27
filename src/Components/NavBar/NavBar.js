@@ -24,17 +24,17 @@ export const NavBar = () => {
                 <a className="nav-link">Job seekers</a>
               </li>
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a className="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 CTA
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                  <li><a className="dropdown-item" href="">Post Job</a></li>
+                  <li><a className="dropdown-item" href="#">Post Job</a></li>
                   <li><a className="dropdown-item" href="#">Find Job</a></li>
                   <li><a className="dropdown-item" href="/signup">Signup</a></li>
                   <li><a className="dropdown-item" href="/auth">Login</a></li>
                   <li><hr className="dropdown-divider" /></li>
-                  <li><a className="dropdown-item" href="">Contact Support</a></li>
-                  <li><a className="dropdown-item" href="">Faqs</a></li>
+                  <li><a className="dropdown-item" href="#">Contact Support</a></li>
+                  <li><a className="dropdown-item" href="#">Faqs</a></li>
                 </ul>
               </li>
             </ul>
@@ -47,4 +47,4 @@ export const NavBar = () => {
       </nav>
     </div>
   );
-};
+}
