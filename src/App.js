@@ -6,8 +6,7 @@ import  { Route, Routes } from "react-router-dom";
 import { LoginPage } from "./Components/AuthPage/LoginPage";
 import { SignupPage } from "./Components/AuthPage/SignupPage";
 import { NavBar } from "./Components/NavBar/NavBar";
-import {DashBoard } from "./Components/SideBar/DashBoard";
-
+import { DashBoard } from "./Components/SideBar/DashBoard";
 
 function App() {
   return (
