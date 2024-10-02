@@ -2,7 +2,7 @@
 export const handleLogin = async (email, password) => {
  try {
     //still going to add http to the fetch 
-    const response = await fetch('/api/auth/login', {
+    const response = await fetch('https://job-board-api-kmwb.onrender.com/api/auth/login', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({email, password}),

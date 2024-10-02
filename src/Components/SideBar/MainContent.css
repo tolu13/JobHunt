@@ -1,0 +1,7 @@
+.main-content{
+    width:80%;
+    display: flex;
+    flex: 4;
+    padding-top: 80px;
+    right: 0;
+}
