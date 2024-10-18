@@ -1,0 +1,33 @@
+.profile-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(216, 251, 216);
+    height: 100vh;
+    width: 100vw;
+}
+
+.header{
+    justify-content: center;
+}
+h2{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.input-name{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.input-des{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.input-ind{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}

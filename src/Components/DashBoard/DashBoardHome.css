@@ -1,0 +1,110 @@
+.Dashbord-container{
+    display: flex;
+    background-color: rgb(216, 251, 216);
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+
+}
+
+.overview{
+    display: flex;
+    color: blue;
+    margin-top: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    font-style: italic;
+}
+
+.dashbord-overview{
+    display: flex;
+    font-style: italic;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+@media (max-width: 1024px){
+    .Dashbord-container{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .overview{
+        padding: 15px;
+    }
+
+    .dashbord-overview{
+        flex-direction: column;
+    }
+}
+
+.jobs-posted{
+    bottom: 430px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 25px;
+    flex-grow: 1;
+    left: 300px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    color: black;
+}
+.app-recieved{
+    bottom: 430px;
+    left: 710px;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 10px;
+    flex-grow: 2;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    color: black;
+}
+.active-jobs{
+    bottom: 430px;
+    left: 1200px;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 10px;
+    flex-grow: 3;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    color: black;
+}
+.recent-activity{
+    position: absolute;
+    bottom: 100px;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    font-style: italic;
+    color: black;
+    text-align: center;
+   
+}
+.job-lists{
+    margin: 10px;
+    padding: 20px;
+    bottom: 25px;
+    font-style: italic;
+    color: blue;
+    justify-content: center;
+    text-align: center;
+    list-style-type: lower-greek;
+}
+.first-l{
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+.second-l{
+    padding: 1px;
+    margin: 2px;
+}

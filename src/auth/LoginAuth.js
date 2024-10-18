@@ -1,20 +1,24 @@
+import axios from "axios";
 
 export const handleLogin = async (email, password) => {
- try {
-    //still going to add http to the fetch 
-    const response = await fetch('https://job-board-api-kmwb.onrender.com/api/auth/login', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({email, password}),
+  try {
+    const response = await axios.post('http://localhost:5000/api/auth/login', {
+      email,
+      password,
     });
-    const data = await response.json();
+    
+    const data = response.data; // No need to await here since it's already resolved
 
-    if (data.success) {
-        return {success: true};
+    console.log('Login response:', data); // Log the response data
+
+    if (data.token) { // Check if the token exists in the response
+      localStorage.setItem('token', data.token); // Store the token in localStorage
+      return { success: true, token: data.token, user_type: data.user_type, message: data.message }; // Return token and success message
     } else {
-        return { success: false, message: data.message};
+      return { success: false, message: data.message }; // Handle any unexpected structure
     }
- } catch (error) {
-    return {success: false, messsage: 'Error signing up'}
- }
-}
+  } catch (error) {
+    console.error("Login error:", error.response ? error.response.data : error.message);
+    return { success: false, message: 'Error signing in' };
+  }
+};

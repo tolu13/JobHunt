@@ -1,0 +1,62 @@
+.man-container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(216, 251, 216);
+}
+.man-job{
+    justify-content: center;
+    text-align: center;
+    color: brown;
+    align-items: center;
+}
+.cool{
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 20px;
+    font-style: italic;
+    text-align: left;
+}
+.th, .td{
+    padding: 12px 15px;
+    border-bottom: 1px solid #b83434;
+    justify-content: space-between;
+}
+.thead{
+    background-color: #092b4d;
+    color: rgb(88, 85, 85);
+}
+
+.edit{
+    border-radius: 30%;
+    padding: 5px;
+    margin: 4px;
+    background-color: #b83434;
+}
+.close{
+    border-radius: 30%;
+    padding: 5px;
+    margin: 4px;
+    background-color: #b83434;
+}
+.delete{
+    border-radius: 30%;
+    padding: 5px;
+    margin: 4px;
+    background-color: #dc1414;
+}
+
+.title{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 5px;
+}
