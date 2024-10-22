@@ -21,7 +21,7 @@ export const NavBar = () => {
                 <a className="nav-link" href="/company-dashboard"> Employers</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link">Job seekers</a>
+                <a className="nav-link" href='/jobseeker-dashboard'>Job seekers</a>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

@@ -1,4 +1,4 @@
-.profile-section{
+.profile-section, .loading{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,4 +30,33 @@ h2{
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+.profile{
+    color: blueviolet;
+    font-style: italic;
+    font-size: large;
+}
+
+.Edit-profile{
+    background-color: rgb(128, 19, 130);
+    border-radius: 30px;
+    color: whitesmoke;
+    font-style: italic;
+}
+
+.loading{
+    color: brown;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-style: italic;
+    display: block;
+    padding: 20px;
+    
+}
+.error{
+   color: green;
+   font-size: xx-large;
+   font-weight: bolder;
+   font-style: italic;
+   display: block;
 }

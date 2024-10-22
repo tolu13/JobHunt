@@ -10,7 +10,7 @@
 .contain{
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     background-color: rgb(105, 105, 207);
     display: flex;
     margin-top: 40px;

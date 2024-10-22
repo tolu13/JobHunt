@@ -24,10 +24,10 @@ export default function SideBar({ setCurrentComponent}) {
           <FaClipboardList className='me-2' />Applications
         </a>
         <br />
-        <a href='#'>
+        <a onClick={() => setCurrentComponent('Settings')}>
           < FaCog className='me-2'/>Settings</a>
         <br />
-        <a href='#' className='my-2'>
+        <a onClick={() => setCurrentComponent('Logout')} className='my-2'>
           <FaSignOutAlt className='me-2'/>Logout</a>
     </div>
 

@@ -44,7 +44,7 @@ export const UserProfile = () => {
         };
 
         getProfile();
-    }, [formData]);
+    }, []);
 
     // Handle form input change
     const handleInputChange = (e) => {
@@ -90,22 +90,31 @@ export const UserProfile = () => {
     };
 
     if (loading) {
-        return <div>Loading profile...</div>;
+        return <div className='loading'>Loading profile...</div>;
     }
 
     if (error) {
-        return <div>{error}</div>;
+        return <div className='error'>{error}</div>;
     }
 
     return (
         <div className='profile-section'>
-             {viewing ? ( // Show profile details and edit button
+             {viewing ?
+              ( // Show profile details and edit button
                     <div className='Profile-details'>
                         <h2>Company Profile</h2>
-                        <p>Name: {profile.name}</p>
-                        <p>Industry: {profile.industry}</p>
-                        <p>Description: {profile.description}</p>
-                        <button onClick={() => setIsEditing(true)}>Edit Profile</button>
+                        <p className='profile'>Name: {profile.name}</p>
+                        <p className='profile'>Industry: {profile.industry}</p>
+                        <p className='profile'>Description: {profile.description}</p>
+                        <button  className="Edit-profile" onClick={() => {
+                            console.log("edit button clicked")
+                            setIsEditing(true);
+                            setFormData({ // Populate form data for editing
+                                user_id: profile.user_id,
+                                name: profile.name,
+                                industry: profile.industry,
+                                description: profile.description,});
+                                }}>Edit Profile</button>
                     </div>
              ) : (
             <div className='header'>

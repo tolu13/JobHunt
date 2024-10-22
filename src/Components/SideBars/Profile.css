@@ -1,0 +1,53 @@
+.profile-container{
+    height: 105vh;
+    width: 100vw;
+    background-color: rgb(252, 224, 189);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-c{
+    justify-content: center;
+    font-size: xx-large;
+    font-style: italic;
+    font-weight: bold;
+    align-items: center;
+    color: blue;
+    text-align: center;
+}
+
+.fullname,
+.Emaill,
+.phone-no,
+.loc,
+.Skills,
+.experience,
+.education,
+.resume,
+.link,
+.git,
+.port{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;   
+    display: flex;
+    border: 1px solid salmon;
+    padding: auto;
+}
+.form-container{
+    justify-content: center;
+    justify-self: center;
+}
+
+.btn-rof{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-style: italic;
+    padding: auto;
+    display: flexbox;
+}

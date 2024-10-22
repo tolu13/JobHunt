@@ -7,6 +7,8 @@ import "./DashBoard.css";
 import { ManageJobs } from './ManageJobs';
 import { UserProfile } from './UserProfile';
 import { Applications } from './Applications';
+import { Settings } from './Settings';
+import Logout from './Logout';
 
 
 export const DashBoard = () => {
@@ -20,7 +22,11 @@ export const DashBoard = () => {
           return <UserProfile />
           case 'Applications':
             return <Applications />
-        
+            case 'Settings':
+              return < Settings />
+              case 'Logout': 
+                return < Logout/>
+                
           default:
             return  <DashBoardHome />
     }

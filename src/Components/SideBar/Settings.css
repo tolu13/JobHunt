@@ -1,0 +1,51 @@
+.settings{
+    background-color:  rgb(216, 251, 216);
+    height: 100vh;
+    width: 100vw;
+    
+}
+.set{
+    text-align: center;
+    color: blue;
+    font-style: italic;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    padding: 40px;
+}
+
+.theme{
+    text-align: center;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: lighter;
+    display: block;
+    margin-top: 0;
+    justify-content: center;
+}
+.password-setting{
+    text-align: center;
+    margin-bottom: 4px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    color: antiquewhite;
+}
+.delete-account{
+    text-align: center;
+    justify-content: center;
+    color: brown;
+    padding: 30px;
+}
+
+.btn-danger{
+    background-color: red;
+    margin-top: 7px;
+    padding: 5px;
+}

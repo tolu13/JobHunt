@@ -24,7 +24,7 @@ export const LoginPage = () => {
       if (result.user_type === 'company') {
         navigate("/company-dashboard");
       } else if (result.user_type === 'job_seeker') {
-        navigate("/");
+        navigate("/jobseeker-dashboard");
       }
     } else {
       setError("Login failed please try again");

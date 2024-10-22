@@ -7,6 +7,7 @@ import { LoginPage } from "./Components/AuthPage/LoginPage";
 import { SignupPage } from "./Components/AuthPage/SignupPage";
 import { NavBar } from "./Components/NavBar/NavBar";
 import { DashBoard } from "./Components/SideBar/DashBoard";
+import { DashBord } from "./Components/SideBars/DashBord";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path='/auth' element={<LoginPage />}/>
       <Route path='/signup' element={<SignupPage />}/>
       <Route path='/company-dashboard' element={<DashBoard />}/>
+      <Route path='/jobseeker-dashboard' element={<DashBord/>}/>
       </Routes>
     </div>
   );
