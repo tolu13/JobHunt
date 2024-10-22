@@ -1,39 +1,48 @@
-.text{
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* This ensures that padding and border are included in the total width and height */
+}
+
+
+.text {
     font-style: italic;
     color: black;
-    margin-top: 100px;
-    margin-bottom: 10px
+    margin-top: 100px; /* Original: Keep margin for spacing */
+    margin-bottom: 10px;
 }
-.text1{
+
+.text1 {
     font-style: italic;
     color: black;
     margin-bottom: 10px;
 }
 
-.btn{
-    background-color: #A47DAB;
+.btn {
+    background-color: #A47DAB; /* Button background */
 }
 
-.search{
+.search {
     padding: 50px 0;
     background-color: #fed4d4;
 }
 
-.containers{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding:  0 15px;
+.containers {
+    max-width: 1200px; /* Constrain width for larger screens */
+    margin: 0 auto; /* Center align the container */
+    padding: 0 15px; /* Maintain horizontal padding */
 }
 
-.h2{
+.h2 {
     font-style: italic;
     text-align: center;
     margin-bottom: 30px;
 }
 
-.searchForm{
+.searchForm {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
     gap: 10px;
     justify-content: center;
 }
@@ -43,8 +52,9 @@
     padding: 10px;
     border: 1px solid #f4768f;
     border-radius: 15px;
-    flex: 1;
-    min-width: 230px;
+    flex: 1; /* Allow inputs to grow equally */
+    min-width: 230px; /* Maintain minimum width */
+    max-width: 300px; /* Added: Limit width on larger screens */
 }
 
 .searchForm button {
@@ -55,21 +65,22 @@
     cursor: pointer;
 }
 
-.searchForm button:hover{
+.searchForm button:hover {
     background-color: #ba5d70;
 }
 
-.listings{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+.listings {
+    max-width: 1200px; /* Constrain width for listings section */
+    margin: 0 auto; /* Center align the container */
+    padding: 0 15px; /* Maintain horizontal padding */
 }
 
 img {
-    height: 70vh;
+    width: 100%; /* Added: Ensures images are responsive */
+    height: auto; /* Added: Maintains aspect ratio */
 }
 
-.h3{
+.h3 {
     text-align: center;
     font-style: italic;
     color: brown;
@@ -86,4 +97,44 @@ img {
     color: black;
     justify-content: center;
     border: 1px #A47DAB solid;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .text {
+        margin-top: 50px; /* Reduced top margin for smaller screens */
+        font-size: 1.2rem; /* Adjust font size */
+    }
+    
+    .text1 {
+        font-size: 1rem; /* Adjust font size */
+    }
+    
+    .search {
+        padding: 30px 0; /* Reduced padding for smaller screens */
+    }
+
+    .h2 {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+
+    .searchForm {
+        flex-direction: column; /* Stack inputs on smaller screens */
+        align-items: center; /* Center form elements */
+    }
+
+    .searchForm input,
+    .searchForm select,
+    .searchForm button {
+        width: 90%; /* Make inputs and button take full width */
+        max-width: 300px; /* Limit width for inputs */
+    }
+
+    .listings {
+        padding: 0 10px; /* Reduced padding for listings section */
+    }
+}
+section {
+    width: 100%; /* Ensure section takes full width */
+  overflow: hidden; /* Prevent any overflow */
 }
